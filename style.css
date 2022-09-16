@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    animation: 1s;
+}
+body{
+    /* background-image: url("./source/imagens/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+}
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background-color: #13B25D;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    font-size: x-large;
+}
+header #logo{
+    margin-right: auto;
+    margin-left: 2%;
+}
+
+img{
+    height: 55px;
+    cursor: pointer;
+}
+.header-list{
+
+}
+.header-options{
+    padding: 0px 15px 0px 15px;
+    float: left;
+    text-align: center;
+    border-radius: 50px;
+    border: #ebff1a;
+    border-style: outset;
+    color: blue;
+}
+
+.spaced{
+    margin-top: 2.5%;
+}
+
+
+
+.teste{
+    display: flex;
+    margin: auto;
+    background-color: #000000;
+    width: 200px;
+    height: 200px;
+}
+.hisoka-post{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+}
+#hisoka{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 350px;
+    height: 400px;
+    border-radius: 25px;
+    border: solid;
+}
+span{
+    color: #d62cce;
+}
+
+.hisoka-text{
+    max-width: 50%;
+}
+
+.texto{
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 35px;
+}
+.container{
+    max-width: 1200px;
+}
+.netero-post{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+
+#netero{
+    width: 650px;
+    height: 300px;
+    border-radius: 15px;
+    margin-left: 5%;
+}
+.netero-text{
+    max-width: 50%;
+}
+.eleição{
+    color: #13B25D;
+}
+/* nen animation CSS START */
+#reforço{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    background: #188930;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+}
+#reforço:hover{
+    width: 60px;
+    height: 60px;
+    font-size: 33.6px;
+    cursor: pointer;
+}
+.reforço-titulo{
+    font-size: 50px;
+}
+#hiden-info{
+    background-color: #188930;
+}
+.transformação{
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    background: #bb00c5;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+}
+.transformação:hover{
+    width: 60px;
+    height: 60px;
+    font-size: 33.6px;
+    cursor: pointer;
+}
+.conjuração{
+    position: absolute;
+    top: 75%;
+    left: 58%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    background: #da0018;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+}
+.conjuração:hover{
+    width: 60px;
+    height: 60px;
+    font-size: 33.6px;
+    cursor: pointer;
+}
+.especialização{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    background: #0070b9;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+}
+.especialização:hover{
+    width: 60px;
+    height: 60px;
+    font-size: 33.6px;
+    cursor: pointer;
+}
+.manipulação{
+    position: absolute;
+    top: 75%;
+    left: 42%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    background: #c1c1c1;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+}
+.manipulação:hover{
+    width: 60px;
+    height: 60px;
+    font-size: 33.6px;
+    cursor: pointer;
+}
+#emissão{
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    background: #e7bd00;
+    width: 50px;
+    height: 50px;    
+    text-align: center;
+    font-size: 28px;
+}
+#emissão:hover{
+    width: 60px;
+    height: 60px;
+    font-size: 33.6px;
+    cursor: pointer;
+}
+
+.animation{
+    width: 500px;
+    height: 350px;
+}
+
+.nen-central{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    top: 52.5%;
+    left: 48.5%;
+    z-index: 10;
+}
+/* nen animation CSS END */
+
+

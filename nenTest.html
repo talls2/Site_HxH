@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/sae1kxu.css" />
+    <link rel="icon" type="image/x-icon" href="./source/imagens/favicon.ico">
+    <title>Teste de NEN</title>
+</head>
+<body>
+    <header>
+        <img
+          href="#"
+          alt="logo-hunter"
+          id="logo"
+          src="./source/imagens/Hunter_x_hunter.png"
+        />
+        <div class="header-list">
+          <a href="./index.html" class="header-options">Inicio</a>
+          <a href="#" class="header-options spaced"></a>
+          <a href="#" class="header-options">News</a>
+          <a href="#" class="header-options spaced"></a>
+          <a href="#" class="header-options">Teste Hunter</a>
+          <a h ref="#" class="header-options spaced"></a>
+          <a href="./nenTest.html" class="header-options">Teste de NEN</a>
+          <a class="header-options spaced"></a>
+        </div>
+    </header>
+    <main>
+        <section id="hiden-info">
+            <h1 class="reforço-titulo">
+                Reforço
+            </h1>
+            <p>
+                O tipo reforço, potencial força fisica, 
+            </p>
+        </section>
+        <section class="animation">
+        <div onclick="myFunction()" id="reforço">強</div>
+        <div class="transformação">変</div>
+        <div class="conjuração">具</div>
+        <div class="especialização">特</div>
+        <div class="manipulação">操</div>
+        <div id="emissão">放</div>
+        <img class="nen-central" src="./source/imagens/Nen_central.png">
+        </section>
+    </main>
+    
+</body>
+<script>
+    function myFunction(){
+        var state = document.getElementById('hiden-info', 'emissão');
+        if (state.style.display === 'none'){
+            state.style.display = "block";
+        } else{
+            state.style.display = 'none';
+        }
+    }
+</script>
+</html>
