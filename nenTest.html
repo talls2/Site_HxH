@@ -29,33 +29,145 @@
         </div>
     </header>
     <main>
-        <section id="hiden-info">
+        <section id="reforço-hiden">
             <h1 class="reforço-titulo">
                 Reforço
             </h1>
             <p>
-                O tipo reforço, potencial força fisica, 
+                O tipo reforço, tem a habilidade de usar o NEN para aumentar capacidades fisicas, ou 
+                transferir o NEN para objetos enquanto proximos ou enconstados no corpo do usuario.
+            </p>
+            <div class="uvogin-father-div">  
+                <h1 id="reforço-users">Usuarios de tipo reforço:</h1>
+                <div class="container-div">
+                    <a href="https://hunterxhunter.fandom.com/wiki/Uvogin" target="_blank">
+                        <img id="uvogin" src="./source/imagens/uvogin.jpg">
+                    </a>
+                </div>     
+                <div class="container-div">
+                    <a href="https://hunter-x-hunter.fandom.com/pt/wiki/Nobunaga_Hazama" target="_blank" >
+                        <img id="nobunaga" href src="./source/imagens/nobunaga.jpg">
+                    </a>
+                </div>     
+                <div class="container-div">
+                    <a href="https://hunterxhunter.fandom.com/wiki/Phinks_Magcub" target="_blank">
+                        <img id="phinks" src="./source/imagens/phinks.png">
+                    </a>
+                        
+                </div>     
+                <div class="container-div">
+                    <a href="https://hunter-x-hunter.fandom.com/pt/wiki/Gon_Freecss" target="_blank">
+                        <img id="gon" src="./source/imagens/gon.jpg">
+                    </a>
+                </div>     
+                <div class="container-div">
+                    <a href="https://hunter-x-hunter.fandom.com/pt/wiki/Isaac_Netero" target="_blank">
+                        <img id="netero" src="./source/imagens/netero.jpg">
+                    </a>
+                </div>     
+            </div>
+          
+        </section>
+        <section id="transformação-hiden">
+            <h1 class="transformação-titulo">
+                Transformação
+            </h1>
+            <p>
+                O tipo transformação, transformação de nen em outros tipos de materia
+            </p>
+        </section>
+        <section id="conjuração-hiden">
+            <h1 class="conjuração-titulo">
+                Conjuração
+            </h1>
+            <p>
+                O tipo conjuração, conjuração de objetos fisicos atraves de NEN 
+            </p>
+        </section>
+        <section id="especialização-hiden">
+            <h1 class="especialização-titulo">
+                Especialização
+            </h1>
+            <p>
+                O tipo especialização, seu potencial é obscuro e desconhecido
+            </p>
+        </section>
+        <section id="manipulação-hiden">
+            <h1 class="manipulação-titulo">
+                Manipulação
+            </h1>
+            <p>
+                O tipo manipulação, consegue manipular objetos e pessoas através do NEN 
+            </p>
+        </section>
+        <section id="emissão-hiden">
+            <h1 class="emissão-titulo">
+                Emissão
+            </h1>
+            <p>
+                O tipo emissão, pode emitir NEN em formas variadas 
             </p>
         </section>
         <section class="animation">
-        <div onclick="myFunction()" id="reforço">強</div>
-        <div class="transformação">変</div>
-        <div class="conjuração">具</div>
-        <div class="especialização">特</div>
-        <div class="manipulação">操</div>
-        <div id="emissão">放</div>
+        <div onclick="myFunction('reforço')" id="reforço">強</div>
+        <div onclick="myFunction('transformação')" id="transformação">変</div>
+        <div onclick="myFunction('conjuração')" id="conjuração">具</div>
+        <div onclick="myFunction('especialização')" id="especialização">特</div>
+        <div onclick="myFunction('manipulação')" id="manipulação">操</div>
+        <div onclick="myFunction('emissão')" id="emissão">放</div>
         <img class="nen-central" src="./source/imagens/Nen_central.png">
         </section>
     </main>
-    
+    <footer>
+
+    </footer>
 </body>
 <script>
-    function myFunction(){
-        var state = document.getElementById('hiden-info', 'emissão');
-        if (state.style.display === 'none'){
-            state.style.display = "block";
-        } else{
-            state.style.display = 'none';
+    function myFunction(nentype){
+        let reforço_state = document.getElementById('reforço-hiden')
+        let transformação_state = document.getElementById('transformação-hiden')
+        let conjuração_state = document.getElementById('conjuração-hiden')
+        let especialização_state = document.getElementById('especialização-hiden')
+        let manipulação_state = document.getElementById('manipulação-hiden')
+        let emissão_state = document.getElementById('emissão-hiden')
+        
+        switch(nentype){    // correlacionador de botão/tipo de nen - hiden
+            case "reforço": 
+                nentype = reforço_state;
+                break;
+            case "transformação": 
+                nentype = transformação_state;
+                break;
+            case "conjuração": 
+                nentype = conjuração_state;
+                break;
+            case "especialização": 
+                nentype = especialização_state;
+                break;
+            case "manipulação": 
+                nentype = manipulação_state;
+                break;
+            case "emissão": 
+                nentype = emissão_state;
+                break;
+        }
+
+        let nen_state = [reforço_state,transformação_state,conjuração_state,
+        especialização_state,manipulação_state,emissão_state]
+        
+        if(nentype.style.display === 'block'){
+            nentype.style.display = 'none'       //verificador de display
+        }
+        else{nentype.style.display = 'block'}
+        
+        for (var n = 0; n <= 5; n++){
+            
+            if (nen_state[n].style.display === 'block'){   // anulador de display de outros
+                if( nen_state[n] != nentype){
+                    nen_state[n].style.display = 'none'
+                }
+            }
+            else{}
         }
     }
 </script>
