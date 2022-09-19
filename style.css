@@ -105,7 +105,7 @@ span{
     margin-top: 10%;
 }
 
-#netero{
+#netero-home{
     width: 650px;
     height: 300px;
     border-radius: 15px;
@@ -352,4 +352,5 @@ footer{
     background-color: #13B25D;
     color: white;
     text-align: center;
+    margin-top: 50px;
 }
