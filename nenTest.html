@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/sae1kxu.css" />
     <link rel="icon" type="image/x-icon" href="./source/imagens/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Teste de NEN</title>
 </head>
 <body>
@@ -75,6 +76,42 @@
             <p>
                 O tipo transformação, transformação de nen em outros tipos de materia
             </p>
+            <div style="justify-content: center;
+            display: flex;">
+                <div id="canva">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="uvogin-father-div">  
+                <h1 id="reforço-users">Usuarios de tipo reforço:</h1>
+                <div class="container-div">
+                    <a href="https://hunterxhunter.fandom.com/wiki/Uvogin" target="_blank">
+                        <img id="hisoka-mini" src="./source/imagens/hisoka.jpg">
+                    </a>
+                </div>     
+                <div class="container-div">
+                    <a href="https://hunter-x-hunter.fandom.com/pt/wiki/Nobunaga_Hazama" target="_blank" >
+                        <img id="killua" href src="./source/imagens/killua.jpg">
+                    </a>
+                </div>     
+                <div class="container-div">
+                    <a href="https://hunterxhunter.fandom.com/wiki/Phinks_Magcub" target="_blank">
+                        <img id="biscuit" src="./source/imagens/biscuit.jpg">
+                    </a>
+                        
+                </div>     
+                <div class="container-div">
+                    <a href="https://hunter-x-hunter.fandom.com/pt/wiki/Gon_Freecss" target="_blank">
+                        <img id="feitan" src="./source/imagens/feitan.jpg">
+                    </a>
+                </div>     
+                <div class="container-div">
+                    <a href="https://hunter-x-hunter.fandom.com/pt/wiki/Isaac_Netero" target="_blank">
+                        <img id="zeno" src="./source/imagens/zeno.png">
+                    </a>
+                </div>     
+            </div>
         </section>
         <section id="conjuração-hiden">
             <h1 class="conjuração-titulo">
@@ -170,5 +207,48 @@
             else{}
         }
     }
+    
+    
+</script>
+<script>
+    const labels = [
+    'Reforço',
+    'Transformação',
+    'Manipulação',
+    'Especialização',
+    'Materialização',
+    'Emissão',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor: 'rgb(0, 0, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [80, 100, 80, 0, 40, 60, 80],
+    }]
+  };
+
+  const config = {
+    type: 'radar',
+    data: data,
+    options: {
+        elements:{
+            
+            line:{
+                borderWidth: 1,
+                backgroundColor: 'rgba(255, 255, 0)'
+
+            }
+            
+        }
+    }
+  };
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );    
 </script>
 </html>
